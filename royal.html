@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{margin:0px;font-family:Arial;border: border-box;}
+        .rc{color:black;} 
+      .navbar{height: 60px;background-color:skyblue;color:black;display: flex;align-items: center;justify-content: space-evenly;}
+      .nav-logo{height: 50px;width:100px;}
+      .logos{background-image: url('aaa.png');height: 50px;width: 100px;background-size: cover;}
+      .border{border: 1.5px solid transparent;}
+      .border:hover{border: 1.5px solid white;}
+       
+      .address1{color:black;font-size: 1rem;}
+       .address2{font-size: 1rem;}
+       .add-icon{display:flex;align-items: center;}
+       
+       /**box3 **/
+       .nav-search{display: flex;justify-content:space-evenly;background-color:pink;width: 620px;height:40px;border-radius: 4px;}
+       .search-select{background-color: #f3f3f3;width:50px;text-align: center;border-bottom-left-radius: 4px;border-top-left-radius: 4px;}
+       .search-input{width:525px;font-size: 1rem;border:none}
+       .search-icon{width:45px;display: flex;justify-content: center;align-items: center;font-size: 1.2rem;background-color: skyblue;border-bottom-right-radius: 4px;border-top-right-radius: 4px;color:#0f1111}
+
+       .nav-search{border:2px solid orange}
+  
+       /**four box**/
+       span{font-size: 0.7rem;}
+       .nav-second{font-weight: bold;font-size: 0.85;}
+
+      /**box6**/
+      .nav-cart i {font-size: 30px;}
+       .nav-cart{font-size: 0.85rem;font-weight: bold;}
+       .panel-optionborder{display: inline-block;position: relative;}
+       .allbox{display: none;position: absolute;padding:10px;z-index: 1;background-color: white;color: #0f1111;height: 300px;width:200px;padding:15px 15px;margin: 20px;}
+       .panel-optionborder:hover .allbox{display: block}
+       .allitem{color:black}
+       
+       /*panel**/
+         .panel{background-color: rgb(17, 168, 228);color:black;height: 40px;display: flex;color:black;align-items: center;justify-content: space-evenly;}
+         .panel-ops p{display: inline;margin: 10px;}
+         .panel-ops{width:65%;font-size: 0.85rem}
+         .panel-deal{font-size: 0.9rem;}
+         .headitem{color:black}
+
+    
+
+         
+         .shop{display: flex;flex-wrap:wrap;justify-content:space-evenly;background-color: #e2e7e6;}
+         .box{height: 400px;width: 23%;padding:20px 0px 15px;margin: 5px;background-color: white;}
+         .boximage{height:250px;width:250px;background-size: cover;margin-left: 0px;margin-top: 30px;}
+         .boxcontent{margin-left: 10px;margin-right: 10px;}
+         .boxcontent p{ color: red;}
+         .full{height:230px;width: 100%;background-color:white;}
+         .fullbox1{width: 100%;height: 210px;display: flex;justify-content: space-evenly;background-color:white}
+         .boxe{height: 200px;padding: 6px 5px;background-color: white;width: 200px;background-size: cover;margin:5px}
+
+
+
+
+
+    .footer{margin-top: 15px;}
+    
+    .foot-panel1{background-color:skyblue;color:black;height: 50px;width:1300px;display: flex;justify-content: center;align-items: center;font-size: 0.5rem;}
+    .foot-panel2{background-color:rgb(18, 178, 241);color:black;height: 500px;display: flex;justify-content: space-evenly;}
+    .foot-panel3{background-color:skyblue;border-top: 0.5px solid black;height:70px;color:black
+   ;display: flex;justify-content: center;align-items: center;}
+    .logo{background-image: url('amazon.png');background-size: cover;height: 50px;width:200px;}
+    .foot-panel4{background-color: rgb(6, 184, 255);height: 80px;;}
+    .pages{font-size: 0.7rem;text-align: center;padding:25px}
+    .copyright{font:-size:0.7rem;text-align:center;padding:25px}
+    ul{margin:20px;}
+    ul p{display: block;font-size: 0.85rem;margin-top: 10px;color: black;}
+
+    </style>
+
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="rc"><b>ROYAL COLLECTION </b></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="address1">Delivering to Haridwar </p>
+                <div class="add-icon">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="address1">update location</p>
+                </div>
+            </div>
+            
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+               </select>
+               <input placeholder="search amazon" class="search-input">
+               <div class="search-icon">
+                <i class="bi bi-search"></i>
+            </div>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello,sign in</span</p>
+                <p class="nav-second">account and list</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Return</span</p>
+                <p class="nav-second"> & orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="bi bi-cart-fill"></i>
+                cart
+            </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-optionborder">
+                <i class="bi bi-list"></i>
+                All
+                <div class="allbox">
+                  <h2>Available product</h2>
+                  <p><a href="bag page/bags.html" class="allitem">bag</a></p>
+                  <p><a href="cloth page/cloth.html"  class="allitem">cloth</a></p>
+                 <p><a href="bottle page/bottle.html" class="allitem">bottle</a></p>
+                 <p><a href="light page/light.html" class="allitem">light</a></p>
+                 <p><a href="kitchen tool page/kitchen tool.html" class="allitem">kitchen tool</a></p>
+                 <p><a href="jewellery/jewellery.html" class="allitem">jewellery</a></p>
+                 <p><a href="shoes page/shoes.html" class="allitem">shoes</a></p>
+                 <p><a href="smartphone page/smartphone.html" class="allitem">iphone</a></p>
+                 <P><a href="bath page/bath/bath.html" class="allitem">bath item</P>
+                <P><a href="brand/brand.html" class="allitem">brand</P>
+                <P><a href="ladiescloth page/ladies.html" class="allitem">ladiescloth</P>
+                <P><a href="outdoor page/solarlight.html" class="allitem">solarlight</P>
+
+                </div>
+            </div>
+
+            <div class="panel-ops">
+            <p><a href="bag page/bags.html" class="headitem">bag</a></p>
+             <p><a href="cloth page/cloth.html"  class="headitem">cloth</a></p>
+            <p><a href="bottle page/bottle.html" class="headitem">bottle</a></p>
+            <p><a href="light page/light.html" class="headitem">light</a></p>
+            <p><a href="kitchen tool page/kitchen tool.html" class="headitem">kitchen tool</a></p>
+            <p><a href="jewellery/jewellery.html" class="headitem">jewellery</a></p>
+            <p><a href="shoes page/shoes.html" class="headitem">shoes</a></p>
+            <p><a href="smartphone page/smartphone.html" class="headitem">iphone</a></p>
+             
+            </div>
+            <div class="panel-deal border">
+                Help line no. : 6398420121         
+              </div>
+        </div>
+        
+
+    </header>
+
+    <div class="header"> 
+        <a href="earbirdpage/earbird.html"><img src="header.jpg" style="height: 300px;width:100%;background-size: cover;"></a>
+    </div>
+
+<div class="shop">
+    <div class="box box1">
+        <div class="boxcontent">
+            <h2>60 % off men clothes</h2>
+        <div><a href="cloth page/cloth.html"><img src="mencloth.jpg" class="boximage"></a></div><br>
+        <p>explore all</p>
+        </div>
+    </div>
+    
+    <div class="box box2">
+        <div class="boxcontent">
+            <h2>upto 50% | Bags</h2>
+        <div class="boximage"><a href="bag page/bags.html"><img src="bag.jpg" class="boximage"></a></div><br>
+       <br> <p>explore all</p>
+        </div>
+    </div>
+    
+    <div class="box box3">
+        <div class="boxcontent">
+        <h2>men and women watches</h2>
+    <div class="boximage"><a href="watch/watch.html"><img src="watch.jpg" class="boximage"></a></div><br>
+    <p>explore all</p></div></div>
+    
+    <div class="box box4">
+        <div class="boxcontent">
+            <h2>Artificial jewellery</h2>
+        <div class="boximage"><a href="jewellery/jewellery.html"><img src="jewellery.jpg" class="boximage"></a></div><br><br>
+        <p>explore all</p>
+    </div>
+</div>
+ 
+<div class="box box5">  <div class="boxcontent">
+    <h2> Decorating light</h2>
+<div class="boximage"><a href="light page/light.html"><img src="light.jpg" class="boximage"></a></div><br><br>
+<p>explore all</p>
+</div></div>
+ 
+<div class="box box6">
+    <div class="boxcontent">
+        <h2>50% off in bottle</h2>
+    <div class="boximage"><a href="bottle page/bottle.html"><img src="bottle.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div>
+</div>
+
+<div class="box box7">
+    <div class="boxcontent">
+        <h2>Under ₹699 | Combo  </h2>
+    <div class="boximage"><a href="brand/brand.html"><img src="box7.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div>
+</div>
+
+<div class="box box8">
+    <div class="boxcontent">
+    <h2>Up to 50% off | International brands</h2>
+    <div class="boximage"><a href="international brand page/international brand.html"><img src="box8.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div>
+</div>
+ 
+<div class="box box9">
+    <div class="boxcontent">
+    <h2>Up to 50% off | Kitchen appliances</h2>
+    <div class="boximage"><a href="smartphone page/smartphone.html"><img src="9.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div>
+</div>
+
+
+<div class="box box10">
+    <div class="boxcontent">
+        <h2>youUp to 50% off | Kitchen appliances 
+        </h2>
+        <div class="boximage"><a href="kitchen tool page/kitchen tool.html"><img src="10.jpg" class="boximage"></a></div><br><br>
+        <p>explore all</p>
+    </div>
+</div>
+
+<div class="box box11">
+    <div class="boxcontent">
+        <h2>Bestsellers in Women's Indian Clothing</h2>
+        <div class="boximage"><a href="ladiescloth page/ladies.html"><img src="11.jpg" class="boximage"></a></div><br><br>
+        <p>explore all</p>
+    </div>     
+</div>
+
+    
+<div class="box box12">
+    <div class="boxcontent">
+    <h2>Min. 50% off | Outdoor solar lights</h2>
+    <div class="boximage"><a href="outdoor page/solarlight.html"><img src="12.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div> 
+</div>
+
+<div class="box box13">
+    <div class="boxcontent">
+    <h2>Up to 50% off | Diabetes care devices</h2>
+    <div class="boximage"><a href="diabetes page/dibates.html"><img src="13.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div> 
+</div>
+
+<div class="box box14">
+    <div class="boxcontent">
+    <h2>Bestsellers | Up to 60% off sport shoes</h2>
+    <div class="boximage"><a href="shoes page/shoes.html"><img src="14.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div> 
+</div>
+
+<div class="box box15">
+    <div class="boxcontent">
+    <h2>Starting ₹99 |   Kitchen tool</h2>
+    <div class="boximage"><a href="kitchen tool page/kitchen tool.html"><img src="15.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div> 
+</div>
+
+<div class="box box16">
+    <div class="boxcontent">
+    <h2>Starting 99Rs | Bathroom hardware & accessories</h2>
+    <div class="boximage"><a href="bath page\bath/bath.html"><img src="16.jpg" class="boximage"></a></div><br><br>
+    <p>explore all</p>
+</div> 
+</div>
+
+
+<div class="full">
+    <h2>Up to 50% off |  furniture to enhance your home from stores near youSee </h2>
+    <div class="fullbox1">
+      
+        <div class="box1" ><a href="furniturepage.html"><img src="full1.jpg" class="boxe"></a></div>
+        <div class="box2" ><a href="furniturepage.html"><img src="full2.jpg" class="boxe"></a></div>
+        <div class="box3"><a href="furniturepage.html"><img src="full3.jpg" class="boxe"></a></div>
+        <div class="box4"><a href="furniturepage.html"><img src="full4.jpg" class="boxe"></a></div>
+        <div class="box5"><a href="furniturepage.html"><img src="full5.jpg" class="boxe"></a></div>
+        <div class="box6"><a href="furniturepage.html"><img src="full6.jpg" class="boxe"></a></div>
+          </div>
+          
+</div>
+
+<div class="full">
+    <h2>Related to items you've viewed </h2>
+    <div class="fullbox1">
+     
+        <div class="box1"><a href="fulllight.html"><img src="l3.jpg" class="boxe"></a></div>
+        <div class="box2"><a href="fulllight.html"><img src="l4.jpg" class="boxe"></a></div>
+        <div class="box3"><a href="fulllight.html"><img src="l5.jpg" class="boxe"></a></div>
+        <div class="box4"><a href="fulllight.html"><img src="o4.jpg" class="boxe"></a></div>
+        <div class="box5"><a href="fulllight.html"><img src="o3.webp" class="boxe"></a></div>
+        <div class="box5"><a href="fulllight.html"><img src="l5.jpg" class="boxe"></a></div>
+        </div>
+          </div>
+                  </div>
+</div><br><br><br>
+
+  
+
+
+
+    <footer>
+        <div class="foot-panel1"><h1>back to top</h1></div>
+
+    <div class="foot-panel2">
+        
+        <ul>
+            <h3><b>Get to Know Us</b></h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+            <p>RC Science</p></ul>
+        
+            <ul>
+            <h3><b>content with us</b></h3>
+            <p>facebook</p>
+            <p>twitter</p>
+            <p>instagram</p></ul>
+        
+            <ul>
+            <h3><b>Make money with us</b></h3>
+            <p>sell on RC COLLECTION</p>
+            <P>sell on RC COLLECTION accelerator</P>
+            <p>protect and building your brand</p>
+            <p>RC COLLECTION global selling</p>
+            <p>Become an affiliate</p>
+            <p>fulfillment an amazon</p>
+            <p>Advertise Your Products</p>
+           </ul>
+        
+            <ul> <h3><b>Let us help you</b></h3>
+           <p> Your Account</p>
+            <p>Returns Centre</p>
+            <p>100% Purchase Protection</p>
+            <p>RC App Download</p>
+            <p>Help</p></ul>
+        </div>
+        
+        <div class="foot-panel3">
+           <div class=""></div>
+          
+    
+        <pre Style="color:black">               Delhi  mumbai  chennai  bengluru  dehradun  indore  lucknow  srinagar  jaipur  hyderebad   
+                                                                       haridwar    ahmedabad    nepal    chandigarh    almbala      </pre>
+    </div>
+         
+        <div class="foot-panel4">
+        <div class="pages" style="background-color: rgb(8, 173, 239);color:black;display: flex;justify-content: space-evenly;">
+            <ul>
+                <p><b>Abebook</b></p>
+                <p>Book,art</p>
+                <p>& collectibles</p>
+            </ul>
+            <ul>
+                <p><b>RC web services</b></p>
+                <p>scalable cloud</p>
+                <p>computing service</p>
+            </ul>
+            <ul>
+                <p><b>Audible</b></p>
+                <p>download</p>
+                <p>Audio book</p>
+            </ul>
+            <ul>
+                <p><b>IMDb</b></p>
+                <p>Movie Tv </p>
+                <p>celebrities</p>
+            </ul>
+        </div>
+                      
+        
+        
+        <div class="copyright" style="background-color:skyblue;color:black;">
+            <p>Conditions of Use & Sale
+             Privacy Notice
+               Interest-Based Ads
+             © 1996-2024, RC.com, Inc. or its affiliates</p>
+        </div>
+    </div> 
+    </footer>
+</body>
+</html>
